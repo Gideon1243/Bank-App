@@ -17,10 +17,9 @@ public class BankingAppGui extends BaseFrame implements ActionListener {
     protected void addGuiComponents() {
 // create welcome message
         String newLine = System.lineSeparator();
-        String welcomeMessage = "<html>" +
-                "<body style='text-align:center'>" +
-                "<b>Hello " + user.getUsername() + "</b><br>" +
-                "What would you like to do today?</body></html>";
+        String welcomeMessage =
+                "Hello " + user.getUsername() + 
+                "What would you like to do today?;
         JLabel welcomeMessageLabel = new JLabel(welcomeMessage);
         welcomeMessageLabel.setBounds(0, 20, getWidth() - 10, 40);
         welcomeMessageLabel.setFont(new Font("Dialog", Font.PLAIN, 16));
